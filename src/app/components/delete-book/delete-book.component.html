@@ -1,0 +1,8 @@
+<mat-dialog-content>
+    Would you like to delete {{ data.book.title }} book?
+
+    <mat-dialog-actions>
+        <button mat-button (click)="onCancelClick()">No</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+    </mat-dialog-actions>
+</mat-dialog-content>
